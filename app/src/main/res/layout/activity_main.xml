@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicione os itens a Lista"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="24dp"
+        android:layout_marginTop="40dp"/>
+
+    <CheckBox
+        android:id="@+id/chb_frango"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_frase"
+        android:text="Frango R$ 12,89" />
+
+    <CheckBox
+        android:id="@+id/chb_arroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arroz R$ 17,25"
+        android:layout_below="@+id/chb_frango"/>
+
+    <CheckBox
+        android:id="@+id/chb_feijao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feijão R$ 8,54"
+        android:layout_below="@+id/chb_arroz"/>
+
+    <CheckBox
+        android:id="@+id/chb_coca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coca Cola R$ 7,00"
+        android:layout_below="@+id/chb_feijao"/>
+
+    <CheckBox
+        android:id="@+id/chb_choc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate R$ 5,00"
+        android:layout_below="@id/chb_coca"/>
+
+    <Button
+        android:id="@+id/btn_soma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chb_choc"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="132dp"
+        android:text="Somar" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_gasto"
+        android:layout_below="@+id/chb_choc"
+        android:layout_marginStart="150dp"/>
+
+
+</RelativeLayout>
